@@ -38,6 +38,15 @@ namespace P2_2_Figuras
         Console.WriteLine(figura.ToString());
         Console.WriteLine($"Área: {figura.GetArea():F2}\n");
       }
+
+      // Calcular y mostrar la suma de las áreas de todas las figuras en la lista
+      double sumaAreas = 0;
+      foreach (Figura figura in lista_figuras)
+      {
+        sumaAreas += figura.GetArea();
+      }
+
+      Console.WriteLine($"Suma de áreas de todas las figuras: {sumaAreas:F2}");
     }
   }
 }
