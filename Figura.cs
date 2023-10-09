@@ -15,10 +15,14 @@ namespace P2_2_Figuras
 
         public abstract double GetArea();
 
+        public void CambiarColor(Color nuevoColor)
+        {
+            _color = nuevoColor;
+        }
+
         public override string ToString()
         {
             return $"Color: {_color}";
         }
     }
 }
-
